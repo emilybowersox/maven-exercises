@@ -11,7 +11,12 @@ public class Stringutils {
         System.out.println("You entered: " + userInput);
 
 //http://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/StringUtils.html#isNumeric-java.lang.CharSequence-
-        System.out.println(StringUtils.isNumeric(userInput));
+       if ((StringUtils.isNumeric(userInput)) == true) {
+           System.out.println(userInput + " is a number.");
+       } else {
+           System.out.println(userInput + " is not a number");
+       }
+//        System.out.println(StringUtils.isNumeric(userInput));
 
         System.out.println(StringUtils.swapCase(userInput));
 
