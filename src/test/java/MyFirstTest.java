@@ -35,6 +35,7 @@ public class MyFirstTest {
         otherNumbers[0] = 1;
         otherNumbers[1] = 2;
         otherNumbers[2] = 3;
+        assertArrayEquals(numbers, otherNumbers);
     }
 
 ////    Create a test method that uses both assertFalse and assertTrue to verify the following statements:
