@@ -1,5 +1,7 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MyFirstTest {
 
@@ -15,13 +17,13 @@ public class MyFirstTest {
 
 //    Create a test method that uses assertNotSame to verify that the following ArrayLists are not the same:
 
-//    @Test
-//            public void testIfArrayListsEquals() {
-//        List<String> languages = new ArrayList<>();
-//        List<String> moreLanguages = new ArrayList<>();
-//
-//        assertNotSame(languages, moreLanguages);
-//    }
+    @Test
+            public void testIfArrayListsNotEquals() {
+        List<String> languages = new ArrayList<>();
+        List<String> moreLanguages = new ArrayList<>();
+        //dealing with objects not values
+        assertNotSame(languages, moreLanguages);
+    }
 
 
 ////    Create a test method that uses assertArrayEquals to verify the following arrays are equal.
